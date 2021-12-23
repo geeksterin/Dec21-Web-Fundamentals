@@ -55,10 +55,3 @@ Assignment:
 create an array using .push with prompt and also using parseInt();
 -> Take three numbers and find max. (Using arrays)
 -> Math.max(); //For further reading.
-
-
-Next Session.
-5. Object.
--> Create, Read, Update, Delete, etc. etc.
-
-6. constants with objects and arrays.
