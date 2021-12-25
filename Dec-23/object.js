@@ -111,7 +111,7 @@ var g_class = {
     'subject': "MERN"
   },
   'students': [{
-      'name': 'Ujjwal'
+      'name': 'Ujjwal',
       'marks': 80,
     },
     {
