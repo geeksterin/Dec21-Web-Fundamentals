@@ -49,16 +49,6 @@ Q. What is a table?
 ---
 
 
--> lists (ul + ol)
--> forms/input/label (a little bit in depth)
--> textarea
--> bold / strong
--> italic
--> underline
--> sub / sup
-
-2. Little bit of CSS. (color, margin).
-
 Assignment 1:
 -> To create a calendar view of January 2022. 
 --> Your calendar should be correct.
