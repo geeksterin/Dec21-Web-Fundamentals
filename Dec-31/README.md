@@ -62,7 +62,6 @@ CSS Properties:
 -> meta
 
 Afterhours:
-Nesting of List.
 1. Adding Github
 
 Assignment:
