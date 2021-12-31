@@ -30,18 +30,6 @@ Layout tags are semantic tags.
 
 ---
 
--> textarea
--> input attribute pattern
--> bold / strong
--> italic
--> underline
--> sub / sup
--> select
--> head
--> meta
-
-2. Little bit of CSS. (color, margin).
-
 Assignment 1:
 Create a description list of the course content. separated by weeks (Week 1 -> Logic building, Week 2 -> Intro to JS, Week 3 -> HTML Funda).
 
