@@ -141,13 +141,3 @@ It does not care about the data types. We can create a variable with a different
 Assignment:
 Q1. Write a program to check whether the number is greater than 10 or not.
 Q2. Write a program to have 3 variables (all three are number) and output the highest/greatest/maximum of all three.
-
-
-
-
-
-
-
-
-
-

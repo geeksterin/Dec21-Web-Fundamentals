@@ -1,0 +1,150 @@
+/* Comments like this */
+
+/* Type selector -> It selects based on the Tag type */
+/* p {
+    color: green;
+} */
+/* 
+span {
+    color: red;
+}
+
+button {
+    color: blue; 
+    background-color: yellow;
+}
+
+body {
+    background-color: lightblue;
+} */
+
+/* ID Selector - Select based on the ID */
+
+/*#<id> */
+/* #special {
+    color: green;
+} */
+
+
+/* Class Selector - Select based on Classname */
+/* .<classname> */
+
+/* .green-text {
+    color: green;
+} */
+
+/* .red-text {
+    color: red;
+}
+
+.abcd2345 {
+    color: orange;
+}
+
+.p1 {
+    color: darkblue;
+}
+
+.red-text-center {
+    text-align: center;
+    color: red;
+} */
+
+/*Attribute Selector - Select based on the Attributes of the element */
+/*[<attribute_name>="<attribute_property>"]*/
+
+/* [type] {
+    background-color: darkgreen;
+} */
+
+/* [class="green-text"] {
+    color: green;
+}
+
+[disabled] {
+    background-color: magenta;
+} */
+
+/* [custom_attribute] {
+    background-color: maroon;
+} */
+
+/*
+Attribute Wildcards
+$ -> Ending with
+* -> Containing
+~ -> Further Reading! -> https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+^ -> Starting with
+*/
+
+
+/* Change the color of all links which ends with .io */
+/* [href$=".io"] {
+    color: white;
+} */
+/*
+[href$=".com"] {
+    color: yellow;
+} */
+
+/* [href*="a"] {
+    color: darkmagenta;
+} */
+
+
+/* Give style to an element containing two classes */
+/* Group multiple selectors together. (WITHOUT any space)*/
+
+/* p.class1.class2 {
+    color: red;
+}
+
+input[type="text"][disabled] {
+    background-color: greenyellow;
+} */
+
+
+/* Give same style to either a paragraph OR an anchor */
+/* Use , */
+/* p, a {
+    color: darkred;
+} */
+
+tr,td,th {
+    border: 1px solid black;
+}
+
+.class1,.class2,.class3 {
+    color: green;
+}
+
+.class1.class2.class3 {
+    color: blue;
+}
+
+
+.none {
+    display: none;
+}
+
+/* button, p {
+    border-color: red;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+} */
+
+
+button {
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    background-color: transparent;
+    padding: 5px;
+    width: 
+}
+/* 
+td,th {
+    boder:
+} */
