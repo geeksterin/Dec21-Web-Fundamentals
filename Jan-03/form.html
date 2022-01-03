@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form onsubmit="formSubmitted(event);" action="#">
+            <input type="text" id="user_name" placeholder="Enter Name" name="user_name" />
+            <input type="submit" />
+        </form>
+        <script>
+            console.log('😎');
+            function formSubmitted(e) {
+                console.log(e);
+                let name = document.getElementById('user_name').value;
+                let form_obj = {
+                    'name': name,
+                }
+                console.log(form_obj);
+
+                //JSON -> JavaScript Object Notation.
+            }
+        </script>
+    </body>
+</html>
