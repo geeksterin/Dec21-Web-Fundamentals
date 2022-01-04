@@ -1,0 +1,19 @@
+/* div p {
+  background-color: chartreuse;
+} */
+
+div > p {
+  background-color: chartreuse;
+}
+
+/* div + p {
+  background-color: chartreuse;
+} */
+
+/* div ~ p {
+  background-color: chartreuse;
+} */
+
+/* #p-3 {
+  background-color: cornflowerblue;
+} */
