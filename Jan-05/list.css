@@ -1,0 +1,64 @@
+/* Select Everything - Universal Selector */
+/* * {
+    color: red;
+} */
+
+/* Desendant Combinator ( ) 👈🏻 Space */
+
+/* div span {
+    color: green;
+} */
+
+/* #elem span {
+    color: green;
+} */
+
+/* .green-button {
+    color: blue;
+}
+
+.red-text span {
+    color: red;
+} */
+
+
+/* Child Combinator (>) Angular bracket */
+/* Select only the child (1 level down) */
+
+/* #elem > span {
+    color: green;
+} */
+
+/* Sibling Combinators. (Adjacent and Genral) */
+
+/* Adjacent sibling combinator (+) */
+/* Select the exact next element if that element matches the Selector */
+
+/* #special+li{
+    color: red;
+} */
+
+
+/* General sibling combinator (~) */
+/* #special~li+span {
+    color: red;
+}
+
+#special~li,#special~p {
+    color: blue;
+}
+
+button span {
+    color: yellow;
+} */
+
+ul > * {
+    color: green;
+}
+
+#colorful {
+    color:limegreen;
+    color: rgb(0, 0, 0); /* 0 to 255 2^8 -> 8 bit colors */
+    /* background-color: rgb(240, 100, 0); */
+    background-color: #c1eef5;
+}
