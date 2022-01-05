@@ -20,7 +20,6 @@ Jan-05
 - https://storyset.com/
 - https://freeillustrations.xyz
 - https://www.freepik.com
-- 
 
 
 Assignment:
