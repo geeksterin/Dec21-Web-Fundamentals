@@ -42,7 +42,7 @@ div + p {
 General Sibling Selector (~) :
 The general sibling selector selects all elements that are next siblings of a specified element.
 
-The following example selects all <p> elements that are next siblings of <div> elements:
+The following example: selects all <p> elements that are next siblings of <div> elements:
 
 ```
 div ~ p {
