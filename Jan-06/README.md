@@ -38,24 +38,3 @@ Jan-06
 Assignment:
 1. Make a page looking like the page of the book.
 
-
-
-
-
-
-
-
-
-
-
-3. Box Model
-- Padding vs Margin - When to use What?
-
-4. Positioning
-- Position property: relative, fixed, absolute, sticky, static
-- When to use position fixed vs when to use position sticky.
-- Add a nav bar to website.
-
-5. Creating a Google Search Page clone. / Create a Landing Page / Create an ecommerce clone (Myntra or something). / Create a YouTube clone or something
-6. Add a contact me button.
-7. Units of Measurement. (px, %, vw, vh, em, rem)

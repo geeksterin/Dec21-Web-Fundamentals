@@ -1,0 +1,38 @@
+h3 {
+    /* margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px; */
+
+    /* margin: 15px; */ /* Single Value - All 4 sides */
+    /* margin: 15px 20px;*/ /* 2 Values - Vertical Horizontal */
+    /* margin: 10px 15px 20px;*/ /* 3 Values - Top Horizonatal Bottom */
+    /* margin: 5px 10px 15px 20px;*/ /* 4 values - Top Right Bottom Left | Clockwise*/
+
+    /* padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 10px;
+
+    padding: 15px;
+    padding: 20px 30px;
+    padding: 10px 20px 30px;
+    padding: 10px 15px 20px 30px; */
+
+
+    /* display: inline; */
+    /* margin-left: 180px; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+button {
+    padding: 20px;
+}
+
+span {
+    margin: 10px;;
+    border: 1px solid black;
+    padding: 20px;
+}

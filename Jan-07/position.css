@@ -1,0 +1,36 @@
+.relative {
+    height: 50px;
+    width: 50px;
+    background-color: tomato;
+    position: relative;
+    /* top: 100px; */
+    left: 0px;
+    top: 0px;
+    /* bottom: 100px; */
+    /* margin-top: 100px; */
+    border-radius: 25px;
+}
+
+.first {
+    top: 0px;
+    left: 0px;
+}
+
+.second {
+    top: -40px;
+    background-color: lightblue;
+}
+
+
+.fixed {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: fixed;
+    /* top: 100px; */
+    /* left: 50px; */
+    bottom: 10px;
+    right: 10px;
+    background-color: darkgreen;
+    border-radius: 50%;
+}
