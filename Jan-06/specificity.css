@@ -1,0 +1,164 @@
+/* p {
+    color: #FF0000;
+    background-color: #FFFF00;
+}
+
+p {
+    color: #00FF00;
+} */
+ 
+
+#aaaa {
+    color: #ff0000;
+}
+
+#aaaa:hover {
+    color: #8000ff;
+}
+
+#aaaa::first-letter {
+    color: #000000;
+}
+
+/* .abcd {
+    color: #ff00ea;
+} */
+
+
+p {
+    color: #5c4b02;
+}
+
+/* p:hover {
+    color: #8000ff;
+} */
+
+[atr="something"] {
+    color: #00ff7b;
+}
+
+/* * {
+    color: #35a30d;
+} */
+
+button { 
+    color: #ff7b00;
+}
+
+button:hover {
+    color: #22ff00;
+    background-color: transparent;
+    border: 0px;
+}
+
+button:active {
+    background-color: #00f2ff;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid lightblue;
+}
+
+input:hover {
+    background-color: #CCCCCC;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+
+/* When I hover on the button, change the color of the paragraph */
+
+button:hover+p {
+    color: #FF0000;
+}
+
+button:active+p {
+    color: #00FF00;
+}
+
+p {
+    color: #FF0000;
+    display: inline;
+}
+
+
+input[type="checkbox"]:checked+p {
+    color: #00FF00;
+}
+
+
+
+
+
+
+
+
+
+/* div > button {
+    color: #8000ff;
+}
+
+div button {
+    color: #ffaa00;
+} */
+
+
+
+
+
+#some {
+    display: block;
+}
+
+#some::first-letter {
+    color: #000000;
+}
+
+#some::selection {
+    background-color: #e600ff;
+}
+
+
+/* n starts from 0. It will go on loop. */
+/* n -> 0, 1, 2, 3, 4,  5, 6,   7,  8,  9,  10 ... */
+/* 2n -> 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ... */
+/* ul>li:nth-child(2n) {
+    color: #FF0000;
+} */
+
+/* ul>li:nth-child(even) {
+    color: #FF0000;
+} */
+
+/* ul>li:nth-child(2n+1) {
+    color: #0000FF;
+} */
+
+/* ul>li:nth-child(odd) {
+    color: #0000FF;
+} */
+
+/* n->   0, 1, 2, 3, 4, 5, 6, .... */
+/* n+5-> 5, 6, 7, 8, 9, 10, 11, ..... */
+ul>li:nth-child(n+5) {
+    color: #0000FF;
+}
+
+.child {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #00FF00;
+}
+
+
+.child:nth-child(n-5) {
+    background-color: #00f2ff;
+}
+
+a:visited {
+    color: yellow
+}
