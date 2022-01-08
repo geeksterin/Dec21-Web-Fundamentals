@@ -1,0 +1,30 @@
+/* body {
+  height: 200vh;
+} */
+.parent {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #00aaff;
+}
+
+.child {
+  padding: 20px;
+}
+
+.child-one {
+  background-color: rgb(116, 255, 116);
+  position: sticky;
+  /* left: 20px; */
+}
+
+.child-two {
+  background-color: rgb(248, 117, 117);
+}
+
+.child-three {
+  background-color: rgb(255, 116, 232);
+}
+
+.five {
+  background-color: cornflowerblue;
+}

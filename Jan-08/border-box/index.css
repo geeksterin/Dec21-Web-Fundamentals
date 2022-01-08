@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 50px;
+}
+
+/*
+  box sizing
+  by default it is set to content-box - which means the width/height
+  that we set is for content box and not the element
+  by changing it to border box we include the padding etc to height 
+  and width
+  
+  * { box-sizing: border-box;}
+*/
+
+.scale {
+  width: 500px;
+  height: 50px;
+  background-color: #615756;
+}
+.content-box {
+  border: 10px solid red;
+  width: 500px;
+  height: 50px;
+  background-color: rgb(134, 229, 232);
+}
+.border-box {
+  width: 500px;
+  height: 50px;
+  background-color: rgb(134, 229, 232);
+}
+
+@media (max-width: 700px) {
+  .border-box {
+    height: 300px;
+    width: 40px;
+  }
+}

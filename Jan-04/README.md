@@ -49,3 +49,24 @@ div ~ p {
   background-color: yellow;
 }
 ```
+
+p + div{
+color: red;
+}
+
+bye + x{
+color: red;
+}
+
+hello > p, p + x
+
+<hello>
+    <p>
+    <bye>
+    <x> //1 
+    <y> 
+    <z>
+    <x> //2
+    <x> //3
+    <x> //4
+    <x> //5
