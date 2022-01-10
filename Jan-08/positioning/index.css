@@ -13,8 +13,8 @@
 
 .child-one {
   background-color: rgb(116, 255, 116);
-  position: sticky;
-  /* left: 20px; */
+  /* height: 100px; */
+  /* overflow: scroll; */
 }
 
 .child-two {

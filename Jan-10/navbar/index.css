@@ -1,0 +1,38 @@
+.navigation {
+  background: deepskyblue;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 30px;
+  flex-wrap: wrap;
+  margin: 200px;
+}
+
+.navigation a {
+  text-decoration: none;
+  /* padding: 20px; */
+  margin: 20px;
+  color: white;
+  display: inline-block;
+}
+/* li {
+  margin: 20px;
+} */
+.navigation a:hover {
+  background-color: chocolate;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 440px) {
+  .navigation li {
+    width: 100%;
+  }
+  .navigation {
+    background-color: burlywood;
+  }
+}
