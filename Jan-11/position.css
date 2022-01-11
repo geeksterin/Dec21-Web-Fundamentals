@@ -1,0 +1,50 @@
+h2 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#abcd {
+    position: initial; /* -> position: static; */
+}
+
+
+.abs {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    margin: 0px;
+}
+
+.pos {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    /* overflow: hidden; */
+    overflow: scroll;
+}
+
+body {
+    margin: 0px;
+    /* margin-top: 50px; */
+    /* padding-top: 50px ; */
+}
+
+
+
+.nav {
+    background-color: #EAEAEA;
+    padding: 4px;
+}
+
+.nav {
+    z-index: 5;
+    /* display: none; */
+    /* position: fixed; */
+    position: sticky;
+    width: 500px;
+    top: 00px;
+    /* left: 0px; */
+}
