@@ -37,9 +37,3 @@ Assignment - 1: Create a website with like counter.
 
 
 2. Formal Parameters vs Actual Parameters.
-
-2. Returns.
-3. DOM and DOM Manipulation
-4. Events.
-5. ECMA Organization and ES Standard
-6. Store a function into a variable.

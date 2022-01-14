@@ -5,7 +5,8 @@ function alertSomething(arg1) {
     // alert(arg1);
     var aaaa = document.getElementById('abcd');
     // console.log(something);
-    aaaa.innerText = newTextaaaa;
+    // aaaa.innerText = newTextaaaa;
+    aaaa.innerText = "<button>Another one!</button>";
 }
 
 //Get an element from the HTML document.
