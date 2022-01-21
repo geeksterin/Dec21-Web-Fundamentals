@@ -1,0 +1,38 @@
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 50px;
+    /* box-sizing: border-box; */
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.container img:hover {
+    border: 3px solid black;
+    /* transform: scale(1.2); */
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(170, 170, 170, 0.8);
+}
+
+.overlay > img {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+
+.d-none {
+    display: none;
+}
