@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9b59b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+}
+
+.form-control {
+  margin: 10px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: violet;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #9471a2;
+  cursor: pointer;
+}
+
+.form-control.success input {
+  border-color: #2bb344;
+}
+
+.form-control.failure input {
+  border-color: #f45f57;
+}
+
+small {
+  color: #f45f57;
+  visibility: hidden;
+}
+
+.form-control.failure small {
+  visibility: visible;
+}

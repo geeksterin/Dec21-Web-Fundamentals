@@ -39,7 +39,8 @@ var randomBtn = document.querySelector(".random-btn");
 
 //reviews = [ {}, {} , {}]
 
-var currentIndex = 0;
+var currentIndex = 2;
+updateUserDetails();
 
 prevBtn.addEventListener("click", prevClick);
 nextBtn.addEventListener("click", nextClick);
@@ -77,7 +78,7 @@ function updateUserDetails() {
   job.innerText = reviews[currentIndex].job;
   info.innerText = reviews[currentIndex].text;
 }
-
+// console.log(Math.random() * 5);
 // console.log(Math.random() * 5);
 
 // console.log(Math.floor(Math.random() * 5));
