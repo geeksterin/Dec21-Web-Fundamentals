@@ -15,8 +15,6 @@ function submitForm(geek) {
   //   validate(passwordConfirm);
 }
 
-function geekster() {}
-
 function validate(element) {
   var nameOfUser = element.value;
   if (nameOfUser === "geekster") {
@@ -26,6 +24,8 @@ function validate(element) {
     var formControl = element.parentElement;
     formControl.className = "form-control failure";
     document.getElementsByClassName(element.id)[0].innerText = "invalid";
-    // console.log(element.id);
+    console.log(element.id);
   }
 }
+
+username.addEventListener("change", (e) => console.log(e.target.value));

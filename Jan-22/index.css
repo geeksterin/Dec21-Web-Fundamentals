@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #9b59b6;
+  background-image: linear-gradient(to right, #7507a0, #d24636);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,13 +11,24 @@ body {
 }
 
 .container {
-  background-color: white;
+  /* background-color: white; */
   padding: 30px;
   width: 400px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #f7e3ff, #fa7c6e);
+}
+
+.heading {
+  text-align: center;
+}
+
+.form {
+  /* padding: 30px; */
 }
 
 .form-control {
-  margin: 10px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .form-control input {
@@ -25,16 +36,20 @@ body {
   width: 100%;
   outline: none;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid #d19ae6;
+  padding: 10px;
+  font-size: 14px;
 }
 
 button {
   display: block;
   width: 100%;
-  background-color: violet;
+  background-image: linear-gradient(to right, #7507a0, #d24636);
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 40px;
+  color: white;
 }
 
 button:hover {
@@ -46,8 +61,16 @@ button:hover {
   border-color: #2bb344;
 }
 
+.form-control.success i {
+  color: #2bb344;
+}
+
 .form-control.failure input {
   border-color: #f45f57;
+}
+
+.form-control i {
+  /*visibility: hidden; */
 }
 
 small {
