@@ -104,28 +104,20 @@ fetch(newURL)
       //   var element = document.createElement("div");
       //   element.innerText = data[i].name;
       //   container.appendChild(element);
-
       //   var tr = document.createElement("tr");
-
       //   var td = document.createElement("td");
-
       //   td.innerText = data[i].name;
-
       //   tr.appendChild(td);
-
       //   table.appendChild(tr);
-
-      var li = document.createElement("li");
-      var div1 = document.createElement("div");
-      var div2 = document.createElement("div");
-      div1.innerText = data[i].name;
-      div2.innerText = data[i]["state-province"];
-      //   div2.innerText = data[i].state-province;
-
-      li.appendChild(div1);
-      li.appendChild(div2);
-
-      ul.appendChild(li);
+      //   var li = document.createElement("li");
+      //   var div1 = document.createElement("div");
+      //   var div2 = document.createElement("div");
+      //   div1.innerText = data[i].name;
+      //   div2.innerText = data[i]["state-province"];
+      //   //   div2.innerText = data[i].state-province;
+      //   li.appendChild(div1);
+      //   li.appendChild(div2);
+      //   ul.appendChild(li);
     }
   })
   .catch((err) => console.log("api has failed"));
