@@ -5,17 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5b9f96b06f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css"/>
-
 </head>
 <body>
-    <h2 id="container" >JS is amazinggg💪🏼🦑</h2>
-    <table id="table" >
-        
-    </table>
-    <ol id="ul">
+    <div class="container">
+        <div class="heading">
+            <h2> Sign up using validation</h2>
+        </div>
+        <form class="form">
+            <div class="form-control">
+                <label for="username">UserName</label>
+                <input type="text" id="username">
+                <small class="username" id="error"></small>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="form-control">
+                <label for="email">email</label>
+                <input type="text" id="email">
+                <small  class="email" id="error"></small>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="text" id="password">
+                <small  class="password" id="error"></small>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="form-control">
+                <label for="confirm-password">confirm password</label>
+                <input type="text" id="confirm-password">
+                <small  class="confirm-password" id="error"></small>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+            </div>
 
-    </ol>
+            <button>Submit</button>
+
+            <!-- <div>
+                username
+            </div>
+            <div>
+                email
+            </div><div>
+                password
+            </div><div>
+                confirm password
+            </div>
+            <button>submit
+            </button> -->
+        </form>
+    </div>
+    <!-- <i class="fas fa-exclamation-circle"></i>
+    <i class="fas fa-check-circle"></i> -->
     <script src="index.js"></script>
 </body>
 </html>

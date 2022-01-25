@@ -1,150 +1,104 @@
-// var myName = "abhishek";
-// var s = `hello my name is ${myName}`;
-// // var s = "hello my name is " + myName;
-// 2 = 2000 milliseconds
-// console.log(s);
+var form = document.querySelector(".form");
+var username = document.getElementById("username");
+var email = document.getElementById("email");
+var password = document.getElementById("password");
+var passwordConfirm = document.getElementById("confirm-password");
 
-// setTimeout(func1, 3000);
-// console.log("geekster");
-// function func1() {
-//   console.log("hello im printing after 3 seconds");
-// }
-// console.log("geekster 2");
+form.addEventListener("submit", submitForm);
 
-// function myOwnSetTimeout(anyFunction, anyTime){ // anyTime should be in milliseconds
-//     if(anyTime seconds have passed){
-//         anyFunction()
-//     }
-// }
-
-// var myPromise = new Promise(x)
-
-// function x(resolve, reject){
-//     if(todays date is 25){
-
-//         resolve("geek")
-//     }else{
-
-//         reject("not a geek")
-//     }
-// }
-
-var yourPromise = new Promise((res, rej) => {
-  res({ name: "geekster" });
-  rej("sorry bhai aaj na hopaye");
-});
-
-// yourPromise.then(ok we will watch the match).catch(i will go play football)
-
-// yourPromise.then(onFullfill).catch(onDhoka);
-
-// function onFullfill(arg) {
-//   console.log("promise is resolved - ", arg);
-// }
-
-// function onDhoka(arg) {
-//   console.log("tumne dhoka diya -  ", arg);
-// }
-
-// yourPromise
-//   .then((arg) => console.log(arg))
-//   .catch((dhoka) => console.log(dhoka));
-
-// calling an backend API
-
-var url =
-  "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true";
-
-var data = fetch(url);
-
-// console.log("data is - ", data);
-
-// data.then(onFullfill).then(onSecondFulfill);
-
-function onFullfill(arg) {
-  return arg.json();
+function submitForm(geek) {
+  geek.preventDefault();
+  //   alert("form has been submitted");
+  //   validate(email);
+  //   validate(username);
+  //   validate(password);
+  //   validate(passwordConfirm);
+  checkUserName(username);
+  checkEmail(email);
+  checkPassword(password);
+  checkConfirmPassword(passwordConfirm);
 }
 
-function onDhoka(arg) {
-  console.log("tumne dhoka diya -  ", arg);
+// function validate(element) {
+//   var nameOfUser = element.value;
+//   if (nameOfUser === "geekster") {
+//     var formControl = element.parentElement;
+//     formControl.className = "form-control success";
+//   } else {
+//     var formControl = element.parentElement;
+//     formControl.className = "form-control failure";
+//     formControl.querySelector("small").innerText = "this is invalid";
+//   }
+// }
+
+function checkUserName(element) {
+  var nameOfUser = element.value;
+  if (nameOfUser === "") {
+    setError(element, "User name cannot be empty");
+  } else {
+    onSuccess(element);
+  }
 }
 
-function onSecondFulfill(arg) {
-  console.log("finallllyyyyyyyy - ", arg);
+function checkEmail(element) {
+  var emailValue = element.value;
+  if (emailValue === "") {
+    setError(element, "Email cannot be empty");
+  } else if (!isEmail(emailValue)) {
+    setError(element, "This is not a valid email");
+  } else {
+    onSuccess(element);
+  }
 }
 
-// fetch(url)
-//   .then((res) => res.json())
-//   .then((finalData) => {
-//     document.write(finalData.activeCasesNew);
-//   });
-
-var newURL = "http://universities.hipolabs.com/search?country=india";
-
-// fetch(newURL)
-//   .then((something) => something.json())
-//   .then((anything) => console.log(anything));
-
-// http://universities.hipolabs.com/search?country=
-
-var container = document.getElementById("container");
-var table = document.getElementById("table");
-var ul = document.getElementById("ul");
-
-// url = "http://uniies.hipolabs.com/search?country=india";
-fetch(newURL)
-  .then((response) => {
-    console.log("inside first then");
-    return response.json();
-  })
-  .then((data) => {
-    console.log("inside second then");
-    console.log(data);
-    for (let i = 0; i < data.length; i++) {
-      //   var element = document.createElement("div");
-      //   element.innerText = data[i].name;
-      //   container.appendChild(element);
-      //   var tr = document.createElement("tr");
-      //   var td = document.createElement("td");
-      //   td.innerText = data[i].name;
-      //   tr.appendChild(td);
-      //   table.appendChild(tr);
-      //   var li = document.createElement("li");
-      //   var div1 = document.createElement("div");
-      //   var div2 = document.createElement("div");
-      //   div1.innerText = data[i].name;
-      //   div2.innerText = data[i]["state-province"];
-      //   //   div2.innerText = data[i].state-province;
-      //   li.appendChild(div1);
-      //   li.appendChild(div2);
-      //   ul.appendChild(li);
-    }
-  })
-  .catch((err) => console.log("api has failed"));
-// var div = document.createElement("div");
-// div.innerText = "hello";
-// table.appendChild(div);
-
-{
+function checkPassword(element) {
+  var specialCharacter = ["(", ")", "$"];
+  var passwordValue = element.value;
+  if (passwordValue === "") {
+    setError(element, "password cannot be empty");
+  }
+  //    else if (!passwordValue.includes("1")) {
+  //     setError(element, "password should contain a number 1");
+  //   }
+  else {
+    onSuccess(element);
+  }
 }
 
-{
-  /* <ol>
-    <li>
-        <div>
-            name
-        </div>
-        <div>
-            state
-        </div>
-    </li>
-</ol> */
+function checkConfirmPassword(element) {
+  var passwordValue = password.value;
+  var confirmPasswordValue = element.value;
+  if (confirmPasswordValue === "") {
+    setError(element, "confirm password cannot be empty");
+  } else if (passwordValue !== confirmPasswordValue) {
+    setError(element, "passwords do not match");
+  } else {
+    onSuccess(element);
+  }
 }
 
-fetch(newURL)
-  .then((something) => something.json())
-  .then((anything) => {
-    // write some functionality
-    // finally we get the data here
-    console.log(typeof anything);
-  });
+// regex for email validation - DO NOT TOUCH
+function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}
+// function isEmail(email) {
+//   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+//     return true;
+//   }
+//   return false;
+// }
+
+function setError(element, errorMessage) {
+  var formControl = element.parentElement;
+  formControl.className = "form-control failure";
+  formControl.querySelector("small").innerText = errorMessage;
+}
+
+function onSuccess(element) {
+  var formControl = element.parentElement;
+  formControl.className = "form-control success";
+}
+
+username.addEventListener("change", (e) => console.log(e.target.value));
