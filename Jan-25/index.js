@@ -19,18 +19,24 @@ fetch(url)
   .then((finalResult) => {
     console.log(finalResult);
     for (var i = 0; i < 5; i++) {
-      //   tr = document.createElement("tr");
-      //   td1 = document.createElement("td");
-      //   td2 = document.createElement("td");
-      //   td3 = document.createElement("td");
-      //   td1.innerText = finalResult[i].symbol;
-      //   td2.innerText = finalResult[i].openPrice;
-      //   td3.innerText = finalResult[i].count;
-      //     tr.appendChild(td1).appendChild(td2).appendChild(td3);
-      //   tr.append(td1, td2, td3);
-      //   table.appendChild(tr);
+      tr = document.createElement("tr");
+      td1 = document.createElement("td");
+      td2 = document.createElement("td");
+      td3 = document.createElement("td");
+      td1.innerText = finalResult[i].symbol;
+      td2.innerText = finalResult[i].openPrice;
+      td3.innerText = finalResult[i].count;
+      //   tr.appendChild(td1).appendChild(td2).appendChild(td3);
+      tr.append(td1, td2, td3);
+      table.appendChild(tr);
     }
   });
+
+//   Element.classList.add("classname")
+
+// element1.appendChild(ele2)
+// element1.appendChild(ele3)
+Element1.append(1, 2, 3, 4);
 
 tr = document.createElement("tr");
 td1 = document.createElement("td");

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item,
+.input-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-form input {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.todo-item {
+  margin: 10px 0;
+}
