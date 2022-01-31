@@ -79,7 +79,7 @@ function onSecondFulfill(arg) {
 //     document.write(finalData.activeCasesNew);
 //   });
 
-var newURL = "http://universities.hipolabs.com/search?country=india";
+var newURL = "http://universities.hipolabs.com/search";
 
 // fetch(newURL)
 //   .then((something) => something.json())
