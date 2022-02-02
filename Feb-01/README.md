@@ -49,33 +49,5 @@ ES12
 
 
 
-
-
-
-5. Hoisting ✔
-
-
-7. new keyword ❌
-
-8. Context (this) ✔
-9. call / apply / bind ❌
-
-10. Closures ❌
-11. Prototype
-
-12. Asynchronous JS
-13. setTimeout vs setInterval ❓
-
-14. Promises ❌
-15. Chaining ❓
-
-16. fetch ✔ (AJAX)
-17. JSON
-
-18. OOP ❔
-19. Anon functions
-20. Types of exceptions
-
-
 Further Reading:
 https://www.youtube.com/watch?v=NYC3JRBUWew
