@@ -26,30 +26,5 @@ Assignment:
 Create a 5 minute timer. Similar to Google UI.
 Additional Points if you are able to implement that progress bar looking thing.
 
-
-
-7. new keyword ❌
-
-8. Context (this) ✔
-9. call / apply / bind ❌
-
-10. Closures ❌
-11. Prototype
-
-
-
-14. Promises ❌
-15. Chaining ❓
-
-16. fetch ✔ (AJAX)
-17. JSON
-
-18. OOP ❔
-19. Anonymous functions
-20. Types of exceptions
-21. CSSOM
-22. Render Tree
-23. String Templating
-
 Further Reading:
 -> Temporal Dead Zone (TDZ) -> Hoisting for let and const.
