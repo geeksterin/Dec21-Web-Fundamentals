@@ -1,0 +1,19 @@
+1. write a js function that will add or multiply all the arguments being provided to it.
+	
+	please note users can provide any number of arguments but at least 3. the first argument will always be a character (+ or * ) denoting what operation to perform.
+
+
+solve following leetcode questions
+
+	2. https://leetcode.com/problems/shuffle-string/
+
+	3. https://leetcode.com/problems/two-sum/
+
+
+
+4. 	develop a simple web page that will have a number being displayed on it and two buttons one for the increase and decreases when someone click on increase number keeps itself 
+
+	increasing by 1 every one second and if someone clicks on decrease number should keep itself decreasing every one second.
+
+
+	please note: both increase and decrease simultaneously must not be possible
