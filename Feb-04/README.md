@@ -24,26 +24,6 @@ str = name + " has scored " + marks + " out of 100.";
 -> This is a pointer. It points to execution context (context of execution).
 
 
-9. call / apply / bind ❌
-16. fetch ✔ (AJAX)
-10. Closures ❌
-11. Prototype
-
-
-14. Promises ❌
-15. Chaining ❓
-
-
-
-
-18. OOP ❔
-19. Anonymous functions
-20. Types of exceptions
-21. CSSOM
-22. Render Tree
-23. String Templating
-
-
 Assignment :
 -> Create an image gallery and implement search functionality. (Reuse Jan 18 code).
 -> If we click on one of the images, it should show full screen. 
